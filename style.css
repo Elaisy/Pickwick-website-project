@@ -253,41 +253,80 @@ a {
 .wrapper-bottom-part {
 
     width: 100%;
-    background-color: olive;
+    background-color: #eceade;
 }
 
+/* The container */
+.checkboxes-contact-form {
 
-.contact-form {
-    position: relative;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.contact-form h2 {
-    margin-left: 3rem;
-}
-
-
+/* Hide the browser's default checkbox */
 .checkboxes-contact-form input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
+/* Create a custom checkbox */
 .checkmark {
-    border-radius: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 30px;
-    width: 30px;
-    background-color: rgb(217, 233, 204);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
 }
 
-.checkmark:hover  {
-    background-color: rgb(233, 233, 233);
-    cursor: pointer;
+/* On mouse-over, add a grey background color */
+.checkboxes-contact-form:hover input ~ .checkmark {
+  background-color: #ccc;
 }
 
-.checkmark
+/* When the checkbox is checked, add a blue background */
+.checkboxes-contact-form input:checked ~ .checkmark {
+  background-color: darkgreen;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  
+}
+
+/* Show the checkmark when checked */
+.checkboxes-contact-form input:checked ~ .checkmark:after {
+  display: block;
+  
+}
+
+/* Style the checkmark/indicator */
+.checkboxes-contact-form .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  color: green;
+}
+
 
