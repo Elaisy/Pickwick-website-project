@@ -6,7 +6,7 @@ html {
 
 body {
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 
 
@@ -14,6 +14,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100vh 70vh 10vh 50vh;
+    
 }
 
 .container {
@@ -21,6 +22,7 @@ body {
     max-width: 1170px;
     position: relative;
     width: 100%;
+    
 }
 
 
@@ -65,8 +67,8 @@ a {
 /* greeting (morning, afternoon,evening*/
 
 .greeting {
-    background-image: url(https://www.pickwick.nl/_test/homepage/pickwick---goedemiddag2.jpg?preset=block-background); 
-    background-size: cover; 
+    background-image: url(https://www.pickwick.nl/_test/homepage/pickwick---goedemiddag2.jpg?preset=block-background);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: grid;
@@ -74,7 +76,7 @@ a {
     height: 100%;
     margin-top: 1rem;
     width: 100%;
-    position: relative;  
+    position: relative;
 }
 
 .text-greeting {
@@ -92,12 +94,12 @@ a {
     margin-top: -4rem;
 }
 
-.mask  {
+.mask {
     position: absolute;
     bottom: -0.5rem;
     z-index: 1;
     width: 100%;
-    
+
 }
 
 /* more */
@@ -162,14 +164,15 @@ a {
     margin: 1rem;
 }
 
-.teabox-picture-1, .teabox-picture-3 {
+.teabox-picture-1,
+.teabox-picture-3 {
     background-image: url(https://www.pickwick.nl/siteassets/thee/_new/packshots/herbal-goodness/camoherbal.png?preset=infocolumn);
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    margin-top: -2rem; 
-    margin-left: 3rem;   
+    margin-top: -2rem;
+    margin-left: 3rem;
 }
 
 .teabox-picture:hover {
@@ -230,11 +233,12 @@ a {
 }
 
 .inspiration-photo {
-    height: 60%;;
+    height: 60%;
     width: 100%;
 }
 
-.inspiration-box h2, .inspiration-box p {
+.inspiration-box h2,
+.inspiration-box p {
     color: black;
     margin-left: 1rem;
 }
@@ -244,4 +248,46 @@ a {
     margin-left: 1rem;
 }
 
+/* news */
+
+.wrapper-bottom-part {
+
+    width: 100%;
+    background-color: olive;
+}
+
+
+.contact-form {
+    position: relative;
+}
+
+.contact-form h2 {
+    margin-left: 3rem;
+}
+
+
+.checkboxes-contact-form input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(217, 233, 204);
+}
+
+.checkmark:hover  {
+    background-color: rgb(233, 233, 233);
+    cursor: pointer;
+}
+
+.checkmark
 
