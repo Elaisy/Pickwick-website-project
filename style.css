@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    color: darkgreen;
     font-family: 'Handlee', cursive;
 }
 
@@ -41,6 +42,8 @@ a {
     color: green;
 }
 
+/* header */
+
 
 .header {
     background-color: white;
@@ -58,6 +61,8 @@ a {
     padding: 10px;
     margin: 0px;
 }
+
+/* greeting (morning, afternoon,evening*/
 
 .greeting {
     background-image: url(https://www.pickwick.nl/_test/homepage/pickwick---goedemiddag2.jpg?preset=block-background); 
@@ -95,6 +100,8 @@ a {
     
 }
 
+/* more */
+
 .more {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -122,15 +129,18 @@ a {
     height: 80%;
 }
 
+/*carrousel */
+
 .favorite-taste-subheader {
     display: flex;
     justify-content: center;
 }
 
+
+
 .carrousel {
     width: 80%;
     margin: 0px auto;
-    margin-bottom: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
@@ -167,7 +177,71 @@ a {
     margin-top: -4rem;
 }
 
+/* tea topics */
+
 .button-subheader {
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 }
+
+.button-subheader .button {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.tea-topics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.tea-topics-video {
+    border-radius: 20px;
+    box-shadow: 0 15px 5px 0 rgba(78, 77, 77, 0.4);
+    width: 80%;
+    height: 80%;
+}
+
+/* inspiration */
+
+.subheader-inspiration {
+    display: flex;
+    justify-content: center;
+}
+
+.inspiration {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.inspiration-box {
+    border-radius: 0.3rem;
+    box-shadow: 0 15px 5px 0 rgba(78, 77, 77, 0.4);
+    height: 60vh;
+}
+
+.inspiration-photo {
+    height: 60%;;
+    width: 100%;
+}
+
+.inspiration-box h2, .inspiration-box p {
+    color: black;
+    margin-left: 1rem;
+}
+
+.inspiration-box a {
+    color: darkgreen;
+    margin-left: 1rem;
+}
+
+
