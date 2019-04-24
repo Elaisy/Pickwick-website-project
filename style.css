@@ -1,0 +1,173 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Handlee', cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;    
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh 70vh 10vh 50vh;
+}
+
+.container {
+    margin: 0px auto;
+    max-width: 1170px;
+    position: relative;
+    width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 45px;
+    color: white;
+    padding: 10px;
+}
+
+.button:hover {
+    background-color: white;
+    color: green;
+}
+
+
+.header {
+    background-color: white;
+    box-shadow: 0 5px 5px 0 rgba(221, 218, 218, 0.4);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav-list {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+    margin: 0px;
+}
+
+.greeting {
+    background-image: url(https://www.pickwick.nl/_test/homepage/pickwick---goedemiddag2.jpg?preset=block-background); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    align-items: center;
+    height: 100%;
+    margin-top: 1rem;
+    width: 100%;
+    position: relative;  
+}
+
+.text-greeting {
+    color: white;
+    margin-left: 6rem;
+    width: 30%;
+}
+
+.text-greeting h1 {
+    font-size: 6rem;
+}
+
+.text-greeting p {
+    font-size: 2rem;
+    margin-top: -4rem;
+}
+
+.mask  {
+    position: absolute;
+    bottom: -0.5rem;
+    z-index: 1;
+    width: 100%;
+    
+}
+
+.more {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 2rem;
+}
+
+.text-more {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.image-more {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-image: url(https://www.pickwick.nl/siteassets/thee/even/even-range.jpg?preset=two-halves-image);
+    background-size: cover;
+    box-shadow: 0 15px 5px 0 rgba(78, 77, 77, 0.4);
+    width: 80%;
+    height: 80%;
+}
+
+.favorite-taste-subheader {
+    display: flex;
+    justify-content: center;
+}
+
+.carrousel {
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.picture-tea {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.teabox-picture {
+    background-image: url(https://www.pickwick.nl/siteassets/thee/_new/packshots/green-tea/oragnemandarin.png?preset=infocolumn);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70%;
+    height: 70%;
+    margin: 1rem;
+}
+
+.teabox-picture-1, .teabox-picture-3 {
+    background-image: url(https://www.pickwick.nl/siteassets/thee/_new/packshots/herbal-goodness/camoherbal.png?preset=infocolumn);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-top: -2rem; 
+    margin-left: 3rem;   
+}
+
+.teabox-picture:hover {
+    cursor: pointer;
+    margin-top: -4rem;
+}
+
+.button-subheader {
+    display: flex;
+    justify-content: center;
+}
