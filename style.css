@@ -229,13 +229,13 @@ a {
     grid-gap: 2rem;
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .inspiration-box {
     border-radius: 0.3rem;
     box-shadow: 0 15px 5px 0 rgba(78, 77, 77, 0.4);
-    height: 60vh;
+    height: 65vh;
 }
 
 .inspiration-box:hover {
@@ -261,7 +261,6 @@ a {
 .inspiration-box a {
     color: darkgreen;
     margin-left: 1rem;
-    padding-bottom: 1rem;
 }
 
 /* news */
