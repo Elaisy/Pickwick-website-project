@@ -233,6 +233,15 @@ a {
     height: 60vh;
 }
 
+.inspiration-box:hover {
+
+    cursor: pointer;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
 .inspiration-photo {
     height: 60%;
     width: 100%;
@@ -310,15 +319,32 @@ a {
     color: darkgreen;
 }
 
+/* instagram */
+
 .instagram {
+    border: 2px solid green;
     display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+
+.instagram-right {
+    border: 2px solid hotpink;
+    margin-right: -3.1rem;
 }
 
 .social-pickwick {
     display: flex;
     justify-content: space-around;
 }
+
+.social-pickwick .fab {
+    margin-left: 2rem;
+}
+
+/* images */
 
 .images {
     display: grid;
@@ -332,5 +358,63 @@ a {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+
+/* footer */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+}
+
+.column {
+    margin-left: -2.8rem;
+}
+
+.column-4 {
+    margin-right: -2.8rem;
+}
+
+.footer-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-right {
+    justify-self: end;
+}
+
+.footer .column li, .copyright li {
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.footer .column a, .copyright li {
+    color: black;
+}
+
+/* copyright */
+
+.copyright {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.copyright ul {
+    color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.copyright ul li {
+    margin-left: -2.8rem;
+    margin-right: -3rem;
+}
+
+
+
+
+
 
 
