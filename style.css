@@ -261,6 +261,7 @@ a {
 .inspiration-box a {
     color: darkgreen;
     margin-left: 1rem;
+    padding-bottom: 1rem;
 }
 
 /* news */
@@ -458,6 +459,7 @@ a {
 /* copyright */
 
 .copyright {
+    position: relative;
     margin-top: 5rem;
     margin-bottom: 2rem;
 }
@@ -474,6 +476,10 @@ a {
     margin-right: -3rem;
 }
 
+.scroll {
+    position: absolute;
+    right: 0;
+}
 
 
 
