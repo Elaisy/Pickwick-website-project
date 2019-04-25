@@ -274,6 +274,53 @@ a {
 }
 
 
+/* checkbox with javascript Dhr. */
+
+.block {
+    background-image: url(checkbox_checked.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 1rem;
+    width: 3rem;
+    height: 3rem;  
+    cursor: pointer;  
+}
+
+.block.check {
+    background-image: url(checkbox_unchecked.png);  
+}
+
+.toggle {    
+    background-image: url(checkbox_checked.png);  
+}
+
+/* end checkbox javascript Dhr. part */
+
+/* start javascript checkbox Mevr. part */
+
+.blockTwo {
+    background-image: url(checkbox_checked_two.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 1rem;
+    width: 3rem;
+    height: 3rem;  
+    cursor: pointer;  
+}
+
+.blockTwo.checkTwo {
+    background-image: url(checkbox_unchecked-two.png);  
+}
+
+.toggleTwo {    
+    background-image: url(checkbox_checked_two.png);  
+}
+
+
+/* end javascript Mevr. checkbox part */
+
 .contact-form-checkboxes {
     display: flex;
 }

@@ -199,11 +199,30 @@
 
                 <div class="contact-form-checkboxes">
 
-                         <img class="checkbox" src="checkbox_unchecked.png" id="imageCheckboxChecked" onclick="change();">
-                         <h2 class="">Dhr.</h2>
+                        <div class="block toggle"></div>
+                        <h2>Dhr.</h2>
+    
 
-                         <img class="checkbox" src="checkbox_unchecked.png" id="imageCheckboxCheckedtwo" onclick="changeTwo();">
-                         <h2 class="">Mevr.</h2>
+                        <script>
+                            const toggle = document.querySelector('.toggle');
+                            const block = document.querySelector('.block');
+                            toggle.addEventListener('click', () => {
+                                block.classList.toggle('check');
+                            });
+                        </script>
+
+                        <div class="blockTwo toggleTwo"></div>
+                        <h2>Mevr.</h2>
+
+                        <script>
+                                const toggleTwo = document.querySelector('.toggleTwo');
+                                const blockTwo = document.querySelector('.blockTwo');
+                                toggleTwo.addEventListener('click', () => {
+                                    blockTwo.classList.toggle('checkTwo');
+                                });
+                            </script>
+
+                         
                 </div>
 
                 <div class="contact-form-personal">
@@ -232,6 +251,7 @@
 
                 <div class="form-bottom">
                 <div class="form-bottom-left">
+
                     <p>Ja, ik ben ouder dan 16 jaar</p>
                     <p>Ja, ik ontvang graag gepersonaliseerde e-mails over Pickwick producten, 
                         exclusieve aanbiedingen, promoties en service op basis van mijn aankopen, 
@@ -373,6 +393,8 @@
 
 
     </div>
+
+-->
 
 </body>
 
