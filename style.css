@@ -181,6 +181,11 @@ a {
     margin-top: -4rem;
 }
 
+.teabox-text h2:hover {
+    color: green;
+    cursor: pointer;
+}
+
 /* tea topics */
 
 .button-subheader {
@@ -261,10 +266,13 @@ a {
 /* news */
 
 .wrapper-bottom-part {
-
+    margin-bottom: 2rem;
     width: 100%;
+    background-image: url(https://www.pickwick.nl/siteassets/_new/iconselements/header-visuals/newsletter-desktop.png);
+    background-size: 100%;
     background-color: #eceade;
 }
+
 
 .contact-form-checkboxes {
     display: flex;
@@ -314,15 +322,22 @@ a {
     cursor: pointer;
 }
 
-.form-bottom p a {
+.form-bottom-left {
+    width: 50%;
+}
+
+.form-bottom-left p a {
     text-decoration: underline;
     color: darkgreen;
+}
+
+.form-bottom-right h1 {
+    margin-bottom: 22rem;
 }
 
 /* instagram */
 
 .instagram {
-    border: 2px solid green;
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
@@ -331,7 +346,6 @@ a {
 
 
 .instagram-right {
-    border: 2px solid hotpink;
     margin-right: -3.1rem;
 }
 
@@ -350,6 +364,7 @@ a {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 4rem;
+    margin-top: 3rem;
 }
 
 .social-image-pickwick:hover {
